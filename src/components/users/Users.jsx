@@ -12,7 +12,7 @@ import { useGoogleLogout } from "react-google-login";
 import { useGetIdentity } from "@pankod/refine";
 
 export const Users = () => {
-  const { data: identity } = useGetIdentity()
+  const { data: identity } = useGetIdentity();
   const { Title } = Typography;
   const { tableProps } = useTable({
     initialSorter: [
